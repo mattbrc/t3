@@ -104,9 +104,9 @@ const Home: NextPage = () => {
             </div>
           )}
           {isSignedIn && <CreatePostWizard />}
+          {isSignedIn && <SignOutButton />}
         </div>
-
-        <Feed />
+        {isSignedIn && <Feed />}
       </PageLayout>
     </>
   );
